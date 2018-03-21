@@ -1,0 +1,14 @@
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\bin\Debug\netcoreapp2.0\PersonRegister.Impl.deps.json
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\bin\Debug\netcoreapp2.0\PersonRegister.Impl.dll
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\bin\Debug\netcoreapp2.0\PersonRegister.Impl.pdb
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\bin\Debug\netcoreapp2.0\PersonRegister.Domain.dll
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\bin\Debug\netcoreapp2.0\PersonRegister.Domain.pdb
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\obj\Debug\netcoreapp2.0\PersonRegister.Impl.csproj.CoreCompileInputs.cache
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\obj\Debug\netcoreapp2.0\PersonRegister.Impl.AssemblyInfoInputs.cache
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\obj\Debug\netcoreapp2.0\PersonRegister.Impl.AssemblyInfo.cs
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\obj\Debug\netcoreapp2.0\PersonRegister.Impl.csproj.CopyComplete
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\obj\Debug\netcoreapp2.0\PersonRegister.Impl.dll
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\obj\Debug\netcoreapp2.0\PersonRegister.Impl.pdb
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\bin\Debug\netcoreapp2.0\PersonRegister.Impl.runtimeconfig.json
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\bin\Debug\netcoreapp2.0\PersonRegister.Impl.runtimeconfig.dev.json
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Impl\obj\Debug\netcoreapp2.0\PersonRegister.Impl.csprojResolveAssemblyReference.cache

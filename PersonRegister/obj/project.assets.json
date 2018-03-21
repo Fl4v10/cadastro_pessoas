@@ -4746,6 +4746,45 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "PersonRegister.App/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "PersonRegister.Impl": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PersonRegister.App.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonRegister.App.dll": {}
+        }
+      },
+      "PersonRegister.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PersonRegister.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonRegister.Domain.dll": {}
+        }
+      },
+      "PersonRegister.Impl/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.0.2",
+          "Microsoft.EntityFrameworkCore.Design": "2.0.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.2",
+          "PersonRegister.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PersonRegister.Impl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonRegister.Impl.dll": {}
+        }
       }
     }
   },
@@ -12527,12 +12566,28 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "PersonRegister.App/1.0.0": {
+      "type": "project",
+      "path": "../PersonRegister.App/PersonRegister.App.csproj",
+      "msbuildProject": "../PersonRegister.App/PersonRegister.App.csproj"
+    },
+    "PersonRegister.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PersonRegister.Domain/PersonRegister.Domain.csproj",
+      "msbuildProject": "../PersonRegister.Domain/PersonRegister.Domain.csproj"
+    },
+    "PersonRegister.Impl/1.0.0": {
+      "type": "project",
+      "path": "../PersonRegister.Impl/PersonRegister.Impl.csproj",
+      "msbuildProject": "../PersonRegister.Impl/PersonRegister.Impl.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.6",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "PersonRegister.App >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12564,7 +12619,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PAULO\\source\\repos\\PersonRegister\\PersonRegister.App\\PersonRegister.App.csproj": {
+              "projectPath": "C:\\Users\\PAULO\\source\\repos\\PersonRegister\\PersonRegister.App\\PersonRegister.App.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

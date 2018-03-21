@@ -4,17 +4,19 @@ using PersonRegister.Domain.Entities;
 
 namespace PersonRegister.Impl.Configuration
 {
-    public class PersonConfig : IEntityTypeConfiguration<Address>
+    public class PersonConfig : IEntityTypeConfiguration<Person>
     {
-        public void Configure(EntityTypeBuilder<Address> builder)
+        public void Configure(EntityTypeBuilder<Person> builder)
         {
-            builder.ToTable("ADDRESS");
+            builder.ToTable("PERSON");
 
+            //builder.HasKey(p => p.Id);
             builder.Property(p => p.Id).HasColumnName("ID").IsRequired();
-            builder.Property(p => p.Number).HasColumnName("NUMBER").IsRequired();
-            builder.Property(p => p.AddressName).HasColumnName("ADDRESSNAME").HasMaxLength(400);
-            builder.Property(p => p.PostalCode).HasColumnName("POSTALCODE").HasMaxLength(40).IsRequired();
-            builder.Property(p => p.Complement).HasColumnName("COMPLEMENT").IsRequired();
+            builder.Property(p => p.Name).HasColumnName("NAME").HasMaxLength(200);
+            builder.Property(p => p.IndentificationDocument).HasColumnName("INDENTIFICATION_DOCUMENT").IsRequired();
+            builder.Property(p => p.Gender).HasColumnName("GENDER").HasMaxLength(40).IsRequired();
+
+            builder.HasOne(p => p.Addresses).WithMany(p => p.People).HasForeignKey(p => p.AddressId);
         }
     }
 }

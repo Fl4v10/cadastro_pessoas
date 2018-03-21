@@ -1,0 +1,10 @@
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\bin\Debug\netcoreapp2.0\PersonRegister.Domain.deps.json
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\bin\Debug\netcoreapp2.0\PersonRegister.Domain.dll
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\bin\Debug\netcoreapp2.0\PersonRegister.Domain.pdb
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\obj\Debug\netcoreapp2.0\PersonRegister.Domain.csproj.CoreCompileInputs.cache
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\obj\Debug\netcoreapp2.0\PersonRegister.Domain.AssemblyInfoInputs.cache
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\obj\Debug\netcoreapp2.0\PersonRegister.Domain.AssemblyInfo.cs
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\obj\Debug\netcoreapp2.0\PersonRegister.Domain.dll
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\obj\Debug\netcoreapp2.0\PersonRegister.Domain.pdb
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\bin\Debug\netcoreapp2.0\PersonRegister.Domain.runtimeconfig.json
+C:\Users\PAULO\source\repos\PersonRegister\PersonRegister.Domain\bin\Debug\netcoreapp2.0\PersonRegister.Domain.runtimeconfig.dev.json
