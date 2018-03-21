@@ -5,7 +5,7 @@ namespace PersonRegister.Domain.Repositories
 {
     public interface IAddressRepository
     {
-        ICollection<Address> Get();
+        List<Address> Get(string search, string pageSize);
         Address Get(int id);
         int Insert(Address address);
         Address Update(Address address);

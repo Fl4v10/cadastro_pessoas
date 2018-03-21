@@ -1,6 +1,9 @@
-﻿using PersonRegister.Domain.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using PersonRegister.Domain.Entities;
 using PersonRegister.Domain.Repositories;
+using PersonRegister.Impl.Context;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace PersonRegister.Impl.Repositories
 {
@@ -13,7 +16,11 @@ namespace PersonRegister.Impl.Repositories
 
         public List<Person> Get(string search, string pageSize)
         {
-            throw new System.NotImplementedException();
+            //using (var db = new PersonDataContext())
+            //{
+            //    //var livros = db.Livros.AsNoTracking().Where(x => x.Titulo.Contains("Domain")).ToList();
+            //}
+            return new List<Person>();
         }
 
         public Person Get(int id)

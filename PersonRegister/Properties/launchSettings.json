@@ -13,7 +13,8 @@
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "Data Source=DESKTOP-P6NLD0E;Initial Catalog=PersonDb;Integrated Security=True;MultipleActiveResultSets=True"
       }
     },
     "PersonRegister": {

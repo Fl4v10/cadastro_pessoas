@@ -7,8 +7,6 @@ namespace PersonRegister.Impl.Context
     {
         public PersonDataContext CreateDbContext(string[] args)
         {
-            //    services.AddDbContext<MyDbContext>(options =>
-            //options.UseSqlServer(connectionString));
             var optionsBuilder = new DbContextOptionsBuilder<PersonDataContext>();
             optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-P6NLD0E;Initial Catalog=PersonDb;Integrated Security=True;MultipleActiveResultSets=True");
 
