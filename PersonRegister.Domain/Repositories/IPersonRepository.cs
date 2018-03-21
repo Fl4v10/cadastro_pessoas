@@ -5,7 +5,7 @@ namespace PersonRegister.Domain.Repositories
 {
     public interface IPersonRepository
     {
-        ICollection<Person> Get();
+        List<Person> Get(string search, string pageSize);
         Person Get(int id);
         int Insert(Person person);
         Person Update(Person person);

@@ -11,7 +11,7 @@ namespace PersonRegister.Impl.Repositories
             throw new System.NotImplementedException();
         }
 
-        public ICollection<Person> Get()
+        public List<Person> Get(string search, string pageSize)
         {
             throw new System.NotImplementedException();
         }
