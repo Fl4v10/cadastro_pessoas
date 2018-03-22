@@ -21,11 +21,11 @@ namespace PersonRegister
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
             services.AddDbContext<PersonDataContext>(GetConnectionString());
+            services.AddMvc();
 
-            services.AddScoped<IAddressRepository, AddressRepositoryImpl>();
-            services.AddScoped<IPersonRepository, PersonRepositoryImpl>();
+            services.AddTransient<IAddressRepository, AddressRepositoryImpl>();
+            services.AddTransient<IPersonRepository, PersonRepositoryImpl>();
         }
 
         private Action<DbContextOptionsBuilder> GetConnectionString()

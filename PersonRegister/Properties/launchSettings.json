@@ -13,18 +13,17 @@
       "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "CONNECTION_STRING": "Data Source=DESKTOP-P6NLD0E;Initial Catalog=PersonDb;Integrated Security=True;MultipleActiveResultSets=True"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "PersonRegister": {
       "commandName": "Project",
-      "launchBrowser": true,
       "launchUrl": "api/values",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONNECTION_STRING": "Data Source=DESKTOP-P6NLD0E;Initial Catalog=PersonDb;Integrated Security=True;MultipleActiveResultSets=True"
       },
-      "applicationUrl": "http://localhost:26458/"
+      "applicationUrl": "http://localhost:8090/"
     }
   }
 }

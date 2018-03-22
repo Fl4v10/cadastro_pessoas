@@ -6,7 +6,7 @@ namespace PersonRegister.Impl.Repositories
 {
     public class AddressRepositoryImpl : IAddressRepository
     {
-        public ICollection<Address> Get()
+        public List<Address> Get(string search, string pageSize)
         {
             throw new System.NotImplementedException();
         }

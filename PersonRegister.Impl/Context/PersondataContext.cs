@@ -13,8 +13,5 @@ namespace PersonRegister.Impl.Context
             modelBuilder.ApplyConfiguration(new AddressConfig());
             modelBuilder.ApplyConfiguration(new PersonConfig());
         }
-
-        public DbSet<PersonConfig> People { get; set; }
-        public DbSet<AddressConfig> Addresses { get; set; }
     }
 }

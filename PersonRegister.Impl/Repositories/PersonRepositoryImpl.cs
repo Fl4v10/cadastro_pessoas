@@ -9,33 +9,44 @@ namespace PersonRegister.Impl.Repositories
 {
     public class PersonRepositoryImpl : IPersonRepository
     {
-        public int Delete(int id)
+        private PersonDataContext _dbContext;
+
+        public PersonRepositoryImpl(PersonDataContext context)
         {
-            throw new System.NotImplementedException();
+            _dbContext = context;
         }
 
-        public List<Person> Get(string search, string pageSize)
+        public void Delete(int id)
         {
-            //using (var db = new PersonDataContext())
-            //{
-            //    //var livros = db.Livros.AsNoTracking().Where(x => x.Titulo.Contains("Domain")).ToList();
-            //}
-            return new List<Person>();
+            var person = _dbContext.Set<Person>().Where(p => p.Id.Equals(id)).SingleOrDefault();
+
+            _dbContext.Set<Person>().Remove(person);
+            _dbContext.SaveChanges();
+        }
+
+        public List<Person> Get(string search, int pageSize)
+        {
+            if (string.IsNullOrEmpty(search))
+                return _dbContext.Set<Person>().Take(10).ToList();
+
+            return _dbContext.Set<Person>().AsNoTracking().Where(p => p.Name.Contains(search)).Take(pageSize).ToList();
         }
 
         public Person Get(int id)
         {
-            throw new System.NotImplementedException();
+            return _dbContext.Set<Person>().AsNoTracking().Where(p => p.Id.Equals(id)).FirstOrDefault();
         }
 
-        public int Insert(Person person)
+        public void Insert(Person person)
         {
-            throw new System.NotImplementedException();
+            _dbContext.Add(person);
+            _dbContext.SaveChanges();
         }
 
-        public Person Update(Person person)
+        public void Update(Person person)
         {
-            throw new System.NotImplementedException();
+            _dbContext.Update(person);
+            _dbContext.SaveChanges();
         }
     }
 }

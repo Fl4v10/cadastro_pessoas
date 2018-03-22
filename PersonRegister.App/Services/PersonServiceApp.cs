@@ -14,7 +14,8 @@ namespace PersonRegister.App.Services
             _rep = person;
         }
 
-        public List<Person> Get(string search, string pageSize) {
+        public List<Person> Get(string search, int pageSize)
+        {
             try
             {
                 return _rep.Get(search, pageSize) ?? null;
@@ -25,7 +26,8 @@ namespace PersonRegister.App.Services
             }
         }
 
-        public Person Get(int id) {
+        public Person Get(int id)
+        {
             try
             {
                 return _rep.Get(id) ?? null;
@@ -36,16 +38,11 @@ namespace PersonRegister.App.Services
             }
         }
 
-        public int Insert(Person person)
+        public void Insert(Person person)
         {
             try
             {
-                var response =  _rep.Insert(person);
-
-                if (response == 0)
-                    throw new Exception("Erro ao isserir registro");
-
-                return response;
+                _rep.Insert(person);
             }
             catch (Exception ex)
             {
@@ -53,10 +50,10 @@ namespace PersonRegister.App.Services
             }
         }
 
-        public Person Update(Person person) {
+        public void Update(Person person) {
             try
             {
-                return _rep.Update(person);
+                _rep.Update(person);
             }
             catch (Exception ex)
             {
@@ -64,15 +61,10 @@ namespace PersonRegister.App.Services
             }
         }
 
-        public int Delete(int id) {
+        public void Delete(int id) {
             try
             {
-                var response = _rep.Delete(id);
-
-                if (response == 0)
-                    throw new Exception("Erro durante o processo de exclusão do arquivo");
-
-                return response;
+                _rep.Delete(id);
             }
             catch (Exception ex)
             {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonRegister", "PersonRegister\PersonRegister.csproj", "{3BC11F71-8B35-4B14-953F-3006BBE90705}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRegister", "PersonRegister\PersonRegister.csproj", "{3BC11F71-8B35-4B14-953F-3006BBE90705}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4A8664F3-BCA7-439E-87C3-C8CFE4627CC4}"
 EndProject
@@ -15,11 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Impl", "03 - Impl", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Domain", "04 - Domain", "{EA2EF6D1-BFB0-4458-8548-EAC034EA5BCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonRegister.App", "PersonRegister.App\PersonRegister.App.csproj", "{0A6FDBA8-E3AB-41BE-8C7A-D13F9EA2A177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRegister.App", "PersonRegister.App\PersonRegister.App.csproj", "{0A6FDBA8-E3AB-41BE-8C7A-D13F9EA2A177}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonRegister.Impl", "PersonRegister.Impl\PersonRegister.Impl.csproj", "{C75E0185-69CA-40CB-B1AE-A94A73D98CC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRegister.Impl", "PersonRegister.Impl\PersonRegister.Impl.csproj", "{C75E0185-69CA-40CB-B1AE-A94A73D98CC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonRegister.Domain", "PersonRegister.Domain\PersonRegister.Domain.csproj", "{BAB38D09-840E-41E3-B229-FC90901719B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonRegister.Domain", "PersonRegister.Domain\PersonRegister.Domain.csproj", "{BAB38D09-840E-41E3-B229-FC90901719B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
