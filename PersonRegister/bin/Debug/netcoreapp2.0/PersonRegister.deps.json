@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "86a062ac6f695f109b50d8949c1e6b958f65bfbe"
+    "signature": "64376418fe7c1970dc31fd00cdde411c7fb12930"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "PersonRegister/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Cors": "5.2.4",
           "Microsoft.AspNetCore.All": "2.0.6",
           "Microsoft.NETCore.App": "2.0.0",
           "PersonRegister.App": "1.0.0"
@@ -119,6 +120,49 @@
         },
         "compile": {
           "lib/netstandard1.6/Microsoft.AI.DependencyCollector.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Cors/5.2.4": {
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.4": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.1",
+          "Newtonsoft.Json.Bson": "1.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.4": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.4"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Cors/5.2.4": {
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.2.4",
+          "Microsoft.AspNet.WebApi.Core": "5.2.4"
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.Cors.dll": {}
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.Cors.dll": {}
         }
       },
       "Microsoft.AspNetCore/2.0.2": {
@@ -4039,6 +4083,34 @@
       "sha512": "sha512-RWxdX90MY6tNF8S5lwRvJcHiBMIWwVLCxd4TGIEl3X0yAKaolY2vs4zTCvyCIVkEAMs1aInTgWkYwOjzYvAHWw==",
       "path": "microsoft.applicationinsights.dependencycollector/2.4.1",
       "hashPath": "microsoft.applicationinsights.dependencycollector.2.4.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Cors/5.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aM03kkW5g8hJt99urM1SlTP4xwhp6U1hJYCEgINO5gHMZxG+ejZh+JATbhp+eyd6Sp6B6IAWPv7xWjLXOEU4AA==",
+      "path": "microsoft.aspnet.cors/5.2.4",
+      "hashPath": "microsoft.aspnet.cors.5.2.4.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OdBVC2bQWkf9qDd7Mt07ev4SwIdu6VmLBMTWC0D5cOP/HWSXyv/77otwtXVrAo42duNjvXOjzjP5oOI9m1+DTQ==",
+      "path": "microsoft.aspnet.webapi.client/5.2.4",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.4.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rbLh178vmOWxhFQgiVkKmZyG53XEdyBZJbCsV36a4VxokIBzSRYUaMkXWEwJTy83PoHhPiDHNQFN3A3BQzwhtg==",
+      "path": "microsoft.aspnet.webapi.core/5.2.4",
+      "hashPath": "microsoft.aspnet.webapi.core.5.2.4.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Cors/5.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JifCqp6kxQpP9ypvjBagFguoHXlxp39FD+jsgZec4u1juBoGsnMhy8GgZjL3O7hAuRuVbdL98S+q+nVSPEGmvA==",
+      "path": "microsoft.aspnet.webapi.cors/5.2.4",
+      "hashPath": "microsoft.aspnet.webapi.cors.5.2.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore/2.0.2": {
       "type": "package",

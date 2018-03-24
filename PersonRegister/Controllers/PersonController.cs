@@ -12,7 +12,14 @@ namespace PersonRegister.Controllers
         [Route("person")]
         public IEnumerable<Person> Get([FromServices]IPersonRepository repository, string search, int pageSize = 10)
         {
-            return repository.Get(search, pageSize);
+            try
+            {
+                return repository.Get(search, pageSize);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         [HttpGet]
@@ -39,7 +46,7 @@ namespace PersonRegister.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                throw ex;
             }
         }
 
@@ -53,7 +60,7 @@ namespace PersonRegister.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                throw ex;
             }
         }
         
@@ -67,7 +74,7 @@ namespace PersonRegister.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                throw ex;
             }
         }
     }

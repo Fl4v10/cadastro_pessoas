@@ -22,7 +22,18 @@ namespace PersonRegister
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<PersonDataContext>(GetConnectionString());
-            services.AddMvc();
+            services.AddMvc().AddJsonOptions(
+                options => 
+                    options.SerializerSettings.ReferenceLoopHandling 
+                    = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
+
+            services.AddCors(options => options.AddPolicy("CorsPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
 
             services.AddTransient<IAddressRepository, AddressRepositoryImpl>();
             services.AddTransient<IPersonRepository, PersonRepositoryImpl>();
@@ -42,6 +53,7 @@ namespace PersonRegister
             }
 
             app.UseMvc();
+            app.UseCors("CorsPolicy");
         }
     }
 }
