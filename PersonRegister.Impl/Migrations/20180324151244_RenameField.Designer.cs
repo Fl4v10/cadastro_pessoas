@@ -11,9 +11,10 @@ using System;
 namespace PersonRegister.Impl.Migrations
 {
     [DbContext(typeof(PersonDataContext))]
-    partial class PersonDataContextModelSnapshot : ModelSnapshot
+    [Migration("20180324151244_RenameField")]
+    partial class RenameField
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
