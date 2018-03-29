@@ -38,11 +38,6 @@ namespace PersonRegister.Impl.Migrations
                     b.Property<int>("Number")
                         .HasColumnName("NUMBER");
 
-                    b.Property<string>("PostalCode")
-                        .IsRequired()
-                        .HasColumnName("POSTAL_CODE")
-                        .HasMaxLength(40);
-
                     b.HasKey("Id");
 
                     b.ToTable("ADDRESS");
@@ -64,11 +59,12 @@ namespace PersonRegister.Impl.Migrations
                         .HasColumnName("GENDER")
                         .HasMaxLength(40);
 
-                    b.Property<string>("IndentificationDocument")
+                    b.Property<string>("IdentificationDocument")
                         .IsRequired()
-                        .HasColumnName("INDENTIFICATION_DOCUMENT");
+                        .HasColumnName("IDENTIFICATION_DOCUMENT");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnName("NAME")
                         .HasMaxLength(200);
 

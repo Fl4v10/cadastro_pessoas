@@ -7,7 +7,7 @@ namespace PersonRegister.Domain.Entities
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        public string IndentificationDocument { get; set; }
+        public string IdentificationDocument { get; set; }
         public bool Gender { get; set; }
         public System.DateTime BirthDate { get; set; }
 

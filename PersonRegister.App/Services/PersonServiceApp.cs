@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 namespace PersonRegister.App.Services
 {
-    public class PersonService
+    public class PersonServiceApp
     {
         private IPersonRepository _rep;
 
-        public PersonService(IPersonRepository person)
+        public PersonServiceApp(IPersonRepository person)
         {
             _rep = person;
         }

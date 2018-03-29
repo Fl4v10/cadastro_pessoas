@@ -18,7 +18,8 @@ namespace PersonRegister.Impl.Repositories
 
         public void Delete(int id)
         {
-            var person = _dbContext.Set<Person>().Where(p => p.Id.Equals(id)).SingleOrDefault();
+            var person = _dbContext.Set<Person>().Where(p => p.Id.Equals(id))
+                .SingleOrDefault();
 
             _dbContext.Set<Person>().Remove(person);
             _dbContext.SaveChanges();
@@ -27,14 +28,15 @@ namespace PersonRegister.Impl.Repositories
         public List<Person> Get(string search, int pageSize)
         {
             if (string.IsNullOrEmpty(search))
-                return _dbContext.Set<Person>().Take(10).ToList();
+                return _dbContext.Set<Person>().Include("Address").AsNoTracking().Take(pageSize).ToList();
 
-            return _dbContext.Set<Person>().AsNoTracking().Where(p => p.Name.Contains(search)).Take(pageSize).ToList();
+            return _dbContext.Set<Person>().Include("Address").AsNoTracking().Take(pageSize).ToList();
         }
 
         public Person Get(int id)
         {
-            return _dbContext.Set<Person>().AsNoTracking().Where(p => p.Id.Equals(id)).FirstOrDefault();
+            return _dbContext.Set<Person>().Include("Address").AsNoTracking()
+                .Where(p => p.Id.Equals(id)).FirstOrDefault();
         }
 
         public void Insert(Person person)
