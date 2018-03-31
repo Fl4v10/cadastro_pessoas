@@ -18,7 +18,7 @@ namespace PersonRegister.App.Services
         {
             try
             {
-                return _rep.Get(search, pageSize) ?? null;
+                return _rep.Get(search) ?? null;
             }
             catch (Exception ex)
             {

@@ -10,11 +10,11 @@ namespace PersonRegister.Controllers
     {
         [HttpGet]
         [Route("person")]
-        public IEnumerable<Person> Get([FromServices]IPersonRepository repository, string search, int pageSize = 10)
+        public IEnumerable<Person> Get([FromServices]IPersonRepository repository, string search)
         {
             try
             {
-                return repository.Get(search, pageSize);
+                return repository.Get(search);
             }
             catch (Exception ex)
             {

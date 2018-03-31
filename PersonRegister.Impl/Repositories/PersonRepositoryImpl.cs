@@ -25,12 +25,13 @@ namespace PersonRegister.Impl.Repositories
             _dbContext.SaveChanges();
         }
 
-        public List<Person> Get(string search, int pageSize)
+        public List<Person> Get(string search)
         {
             if (string.IsNullOrEmpty(search))
-                return _dbContext.Set<Person>().Include("Address").AsNoTracking().Take(pageSize).ToList();
+                return _dbContext.Set<Person>().Include("Address").AsNoTracking()
+                    .Where(p => p.Name.Contains(search)).ToList();
 
-            return _dbContext.Set<Person>().Include("Address").AsNoTracking().Take(pageSize).ToList();
+            return _dbContext.Set<Person>().Include("Address").AsNoTracking().ToList();
         }
 
         public Person Get(int id)
